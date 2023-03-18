@@ -1,8 +1,25 @@
-menu = document.querySelector('.menu-bar');
-menu.onclick = function() {
-list = document.querySelector('.nav-top-middle');
-list.classList.toggle("active");
+
+var navbar = document.getElementById("navbar");
+
+function openmenu(){
+    navbar.style.right = '0';
+    
 }
+function closemenu(){
+    navbar.style.right = '-200px';
+}
+
+
+
+
+
+
+
+// menu = document.querySelector('.menu-bar');
+// menu.onclick = function() {
+// nav = document.querySelector('navbar');
+// nav.classList.toggle("active");
+// }
 
 
 // function displayMenu(){
