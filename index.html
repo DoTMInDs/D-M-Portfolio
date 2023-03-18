@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap" 
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1566b08547.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar-container">
+            <div id="nav" class="nav-top-left">
+                <img src="logo.png" alt="">
+                <h1>Portfolio</h1>
+            </div>
+            <div id="menu" class="menu-bar" onclick="displayMenu()">
+                <i class="material-symbols-outlined">menu</i>    
+            </div>
+            <div id="navbar" class="nav-top-middle">
+            <ul>
+                <li>
+                    <a href="#home">home</a>
+                </li>
+                <li class="drop-down">
+                        <a onclick="dropDownService()" id="win" href="#my-work">service</a>
+                        <i class="material-symbols-outlined">expand_more </i>
+                    <div class="service-drop-down">
+                        <ul id="get" class="retrieve">
+                            <div class="first-number">
+                                <i class="fa-solid fa-code"></i>
+                                <li>Web Design</li>
+                            </div>
+
+                            <div class="first-number">
+                                <i class="fa-solid fa-crop"></i>
+                                <li>UI/UX Design</li>
+                            </div>
+
+                            <div class="first-number">
+                                <i class="fa-brands fa-app-store"></i>
+                                <li>App Design</li>  
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">resume</a>
+                </li>
+                <li>
+                    <a href="#my-portfolio">portfolio</a>
+                </li>
+                <li class="drop-down">
+                    <a href="#">page</a>
+                    <i class="material-symbols-outlined">expand_more </i>
+                </li>
+                <li class="drop-down-list">
+                    <a onclick="dropDownList()" id="display" href="#">contact </a> 
+                        <i id="material" class="material-symbols-outlined">expand_more</i>
+                    
+                        <div class="phone-open">
+                            <ul id="open" class="phone">
+                                <div class="first-number">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    <p class="number">(+233 20 273 9333)</p>
+                                </div>
+                                <div class="first-number">
+                                    <i class="material-symbols-outlined">call</i>
+                                    <p class="number">(+233 59 736 2178)</p>
+                                </div>
+                            </ul>
+                        </div>
+                </li>
+            </ul>
+            </div>
+            <div class="nav-top-right">
+                <button class="hire">Hire me</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="main-content">
+                <div class="media-image">
+                    <!-- <img src="IMG_2485.jpg" alt="" width="200" height="200"> -->
+                </div>
+                <div class="title">
+                    <p class="get">GET EVERY SINGLE SOLUTIONS.</p>
+                </div>
+                <div class="title">
+                    <h1>I'm a Web Developer 
+                        <br>Esmond D.MonD Abban
+                </div>
+                <div class="title">
+                    <p class="about-me">I am a junior Web developer able to build a Web presence 
+                        from the ground up - from concept, navigation, layout and programming
+                        to UX, terrific landing paged, Business Websites and efficient code using
+                         current best practices in web development. i'm a fast learner worker and 
+                         team player who is proficient in a array of scripting languages and 
+                         multimedia Web tools.<p>
+                </div>
+                <div class="more">
+                    <div class="btn">
+                        <button><a href="#">Learn More</a></button>
+                    </div>
+                    <div class="btn">
+                        <i class="material-symbols-outlined">download</i>
+                        <button><a href="#">DOWNLOAD CV</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="IMG_2499.PNG" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="my-work">
+        <div class="service-container">
+            <h2 class="mine">My Services</h2>
+            <div class="work-container">
+                <div class="services-container">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="nature">
+                        <h2>Web Design</h2>
+                        <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                            molestiae repudiandae. Iure sed similique autem voluptatem
+                            distinctio architecto ipsum expedita quos quibusdam rerum?</p>
+                            <span>Learn more<span>
+                    </div>
+                </div>
+                <div class="services-container">
+                    <i class="fa-solid fa-crop"></i>
+                    <div class="nature">
+                        <h2>UI/UX Design</h2>
+                        <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                            molestiae repudiandae. Iure sed similique autem voluptatem
+                            distinctio architecto ipsum expedita quos quibusdam rerum?</p>
+                            <span>Learn more<span>
+                    </div>
+                </div>
+                <div class="services-container">
+                    <i class="fa-brands fa-app-store"></i>
+                    <div class="nature">
+                        <h2>App Design</h2>
+                        <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                            molestiae repudiandae. Iure sed similique autem voluptatem
+                            distinctio architecto ipsum expedita quos quibusdam rerum?</p>
+                            <span>Learn more<span>
+                    </div>
+                </div>
+                <div class="services-container">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <div class="nature">
+                        <h2>Landing Pages</h2>
+                        <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                            molestiae repudiandae. Iure sed similique autem voluptatem
+                            distinctio architecto ipsum expedita quos quibusdam rerum?</p>
+                            <span>Learn more<span>
+                    </div>
+                </div>
+                <div class="services-container">
+                    <i class="fa-solid fa-video"></i>
+                    <div class="nature">
+                        <h2>Movie Websites</h2>
+                        <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                            molestiae repudiandae. Iure sed similique autem voluptatem
+                            distinctio architecto ipsum expedita quos quibusdam rerum?</p>
+                            <span>Learn more<span>
+                    </div>
+                </div>
+                <div class="services-container">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="nature">
+                        <h2>Log in Form</h2>
+                        <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                            molestiae repudiandae. Iure sed similique autem voluptatem
+                            distinctio architecto ipsum expedita quos quibusdam rerum?</p>
+                            <span>Learn more<span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="my-portfolio">
+        <div class="portfolio">
+            <h2 class="work">My Work</h2>
+            <div class="work-list">
+                <div class="sample">
+                    <img src="work_1.jpg" alt="">
+                </div>
+
+                <div class="sample">
+                    <img src="work_2.png" alt="">
+                </div>
+
+                <div class="sample">
+                    <img src="work_3.jpg" alt="">
+                </div>
+
+                <div class="sample">
+                    <img src="work_4.jpg" alt="">
+                </div>
+
+                <div class="sample">
+                    <img src="work_5.jpg" alt="">
+                </div>
+
+                <div class="sample">
+                    <img src="work_6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
