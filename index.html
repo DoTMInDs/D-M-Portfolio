@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap" 
@@ -15,49 +17,57 @@
 </head>
 <body>
     <div id="header">
-        <!-- <div class="container"> -->
-            <div class="navbar-container">
-                <div id="nav" class="nav-top-left">
-                    <img src="logo.png" alt="">
-                    <h1>Portfolio</h1>
-                </div>   
-                <div class="nav-top-middle">
-                    <ul id="navbar" >
-                        <li class="drop-down">
-                            <a onclick="dropDownService()" id="win" href="#">Home</a> 
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#my-portfolio">portfolio</a>
-                        </li>
-                        <li class="drop-down">
-                            <a href="#service">Services</a>
-                        </li> 
-                        <li class="drop-down-list">
-                        <a href="#contact">contact </a> 
-                        </li>
-                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" id="menu" onclick="openmenu()"></i>  
-                </div>
-                <div class="nav-top-right">
-                    <button class="hire">Hire me</button>
-                </div>
-            </div>
-    <!-- ---------------------------content-section--------------------- -->
-            <div class="content">
-                <div class="main-content">        
-                    <div class="title">
-                        <p class="get">UI/UX <span>Designer</span></p>
-                        <h1>I'm a <span>Web Developer </span>
-                            <br>Esmond D.MonD Abban
-                    </div> 
+        <div class="navbar-container">
+            <div id="nav" class="nav-top-left">
+                <img src="logo.png" alt="">
+                <h1>D<span class="name">•</span>M<span class="name">•</span>InDz</h1>
+            </div>   
+            <div class="nav-top-middle">
+                <ul id="navbar" >
+                    <li class="drop-down">
+                        
+                        <a onclick="dropDownService()" id="win" href="#"><i class="material-symbols-outlined icon-ion">home</i>Home</a>
+                    </li>
+                    <li>
+                        <a href="#about"> <i class="material-symbols-outlined icon-ion">store</i>About</a>
+                    </li>
+                    <li>
+                        <a href="#my-portfolio"> <i class="material-symbols-outlined icon-ion">work</i>portfolio</a>
+                    </li>
+                    <li class="drop-down">
+                        <a href="#service"><i class="material-symbols-outlined icon-ion">store</i>Services</a>
+                    </li> 
+                    <li class="drop-down">
+                        <a href="#feedback"><i class="material-symbols-outlined icon-ion">feedback</i>Feedback</a>
+                    </li> 
+                    <li class="drop-down-list">
+                        <a href="#contact"><i class="material-symbols-outlined icon-ion">phone</i>contact </a> 
+                    </li>
+                    <i class="material-symbols-outlined faXmark" onclick="closemenu()">close</i>
+                </ul>
+                <i class="material-symbols-outlined faBars" id="menu" onclick="openmenu()">menu</i>  
+                <div class="moon">
+                    <i id="darkMode" class="material-symbols-outlined">dark_mode</i>
                 </div>
             </div>
-        <!-- </div> -->
+            
+            <!-- <div class="nav-top-right">
+                <button class="hire">Hire me</button>
+            </div> -->
+        </div>
+        <!-- ---------------------------content-section--------------------- -->
+        <div class="content">
+            <div class="main-content">        
+                <div class="title">
+                    <p class="get"> <span class="iam">I'm</span> a UI/UX <span>Designer</span></p>
+                    <h1 class="sub-title">I'm a <span class="name">Web Dev. </span>
+                        <br>Esmond Abban
+                </div> 
+            </div>
+        </div>
+        
     </div>
+   
     <!-- --------------------about section--------------------- -->
     <div id="about">
         <!-- <div class="container"> -->
@@ -89,7 +99,7 @@
                                     </div>
                                     <div class="info-detail">
                                         <h3>ADDRESS:</h3>
-                                        <P class="info-sub-5">Akotsi Box 3</P>
+                                        <P class="info-sub-5">Ghana - Accra, Dansoman - 10 GoldenRod</P>
                                     </div>
                                 </div>
                                 <div class="media-links">
@@ -98,16 +108,79 @@
                                     <i class="fa-brands fa-instagram"></i>
                                 </div>
                                 <div class="more">
-                                    <div class="btn">
+                                    <div class="btn learnMore">
                                         <button><a href="#">LEARN MORE</a></button>
                                     </div>
                                     <div class="btn">
                                         <i class="material-symbols-outlined">download</i>
-                                        <button><a href="Motivation Letter.pdf" download>DOWNLOAD CV</a></button>
+                                        <button><a href="./cv/Canada Resume-Abban.pdf" download>DOWNLOAD CV</a></button>
                                     </div>
                                 </div>
                 </div>
             </div>
+        <!-- </div> -->
+    </div>
+    <!-- -------------------learn-more-container------------ -->
+    <div class="learn-more-container">
+        <!-- <div class="learn-more"> -->
+            <div class="row row-learn">
+                <!-- <div class="about-col-1 sticky-img">
+                    <img src="IMG_2485.jpg" alt="">
+                </div> -->
+                <div class="about-col-2 experience">
+                    <h2 class="sub-title experience-sub-title">Experience</h2>
+                        <p class="about-me experience-about-me">I partner with startups, organizations and Fortune 500 
+                            companies to build diital products that help clients overcome 
+                            challenges and create lasting connections with millions of people
+                            every day.<p>
+
+                    <div class="experience-sub-content">
+                        <h2 class="experience-sub">Web Developer</h2>
+                        <p class="sub-para-title">Npuntu Technologies Jan 2023 -- Present</p>
+                        <p class="para-title">Modify, intergrate and test software code for
+                            e-commerce and other internet application. Designed and
+                            developed user-friendly website, including optimized 
+                            check-out page that increased uer clicks, and sbsequently
+                            customer purchase by 50%.</p>
+                    </div>
+                    <div class="experience-sub-content">
+                        <h2 class="experience-sub">Middle Frontend Developer</h2>
+                        <p class="sub-para-title">Webbiit Technologies Mar 2021 -- Nov 2022</p>
+                        <p class="para-title">Built single page application (SPA), responsive web design,
+                            UL using HTML grid layout , CSS media querries. Modify, intergrate and test software 
+                            code for e-commerce and other internet application.</p>
+                    </div>
+                    <div class="experience-sub-content">
+                        <h2 class="experience-sub">IT Specialist / Consultant</h2>
+                        <p class="sub-para-title">United WorldNet System Aug 2019 -- May 2021</p>
+                        <p class="para-title">Modify, intergrate and test software code for
+                            e-commerce and other internet application. Designed and
+                            developed user-friendly website, including optimized 
+                            check-out page that increased uer clicks, and sbsequently
+                            customer purchase by 50%.</p>
+                    </div>
+                    <div class="experience-sub-content">
+                        <h2 class="experience-sub">Administrative Assistant (Voluntary Work)</h2>
+                        <p class="sub-para-title">Entsiey System Design Jan 2018 -- Aug 2019</p>
+                        <p class="para-title">Transfering data from formats into conputer files or database
+                            system. Clasify, label and store diskettes/disks and tapes of data.
+                        </p>
+                    </div>
+                    <div class="button-display-flex">
+                        <div class="cover-letter-btn">
+                            <button class="cover"><a href="./cv/Cover Letter-Canada Job.pdf" download>DOWNLOAD Cover Letter</a></button>
+                        </div>
+                        <!-- <div class=" cover-letter-btn">
+                            <button class="cover"><a href="./cv/Cover Letter-Canada Job.pdf" download>DOWNLOAD Cover Letter</a></button>
+                        </div> -->
+                    </div>
+                    <div class="back-btn learnMore">
+                        <button class="btn-back learnMore">Go to back</button>
+                    </div>
+                </div>
+              
+            </div>
+           
         <!-- </div> -->
     </div>
 
@@ -117,55 +190,71 @@
             <h2 class="mine">Services</h2>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                    <i class="material-symbols-outlined">code</i>
+                    <h2>Web Development</h2>
+                    <p class="tell">Javascript, Python, Node.js, React.js, HTML, CSS
                        </p>
                         <span>Learn more<span>
                 </div>
                  
                 <div>
-                    <i class="fa-solid fa-crop"></i>
+                    <i class="material-symbols-outlined">book</i>
+                    <h2>Frontend Development</h2>
+                    <p class="tell"> HTML, CSS, LESS, SASS, Bootstrap, Wordpress, Drupal,
+                        React.js, Typscript
+                       </p>
+                        <span>Learn more<span>
+                </div>
+                 
+                <div>
+                    <i class="material-symbols-outlined">crop</i>
                     <h2>UI/UX Design</h2>
-                    <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                    <p class="tell">Photoshop, Illustrator, Sketch, Prototyping, 
+                        Wireframing, User Research, Usability Testing 
                        </p>
                         <span>Learn more<span>
                 </div>
                     
                 <div>
-                    <i class="fa-brands fa-app-store"></i>
+                    <i class="material-symbols-outlined">apps</i>
                     <h2>App Design</h2>
-                    <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                    <p class="tell">Let us design and build for you an app for your company.
                        </p>
                         <span>Learn more<span>
                 </div>
             
                 <div>
-                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="material-symbols-outlined">dynamic_form</i>
                     <h2>Landing Pages</h2>
-                    <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                    <p class="tell">We can build you a clean landing page and freh popup login Page
+                        that yo can use for your website. 
                         </p>
                         <span>Learn more<span>
                 </div>
             
                 <div>
-                    <i class="fa-solid fa-video"></i>
+                    <i class="material-symbols-outlined">movie</i>
                     <h2>Movie Websites</h2>
-                    <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                    <p class="tell">Let us build you a movie website that allows everyone in the 
+                        world easily get access to stream your movies.
                        </p>
                         <span>Learn more<span>
                 </div>
             
                 <div>
-                    <i class="fa-solid fa-circle-user"></i>
+                    <i class="material-symbols-outlined">data_thresholding</i>
+                    <h2>Church Websites</h2>
+                    <p class="tell">Clean and fresh design for your church website. it is easy to 
+                        customize, also you can login with your social media account.
+                       </p>
+                        <span>Learn more<span>
+                </div>
+            
+                <div>
+                    <i class="material-symbols-outlined">account_circle</i>
                     <h2>Log in Form</h2>
-                    <p class="tell">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illum blanditiis dignissimos pariatur ex minus velit eveniet 
+                    <p class="tell">A Login page is of extreme importance to web and app design,
+                        expecially for online stores or e-commerce website. 
                         </p>
                         <span>Learn more<span>
                 </div>
@@ -184,7 +273,7 @@
                         <h4>Online Shopping App</h4>
                         <p>The app connects you to the talented people around the world.
                             Download it from play store</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="#"><i class="material-symbols-outlined">ios_share</i></a>
                     </div>
                 </div>
 
@@ -194,7 +283,17 @@
                         <h4>Social Media App</h4>
                         <p>The app connects you to the talented people around the world.
                             Download it from play store</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://dotminds.github.io/YouTube-Clone/"><i class="material-symbols-outlined">ios_share</i></a>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="work_3.jpg" alt="">
+                    <div class="layer">
+                        <h4>Log-In Page</h4>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                        <a href="https://dotminds.github.io/YouTube-Clone/"><i class="material-symbols-outlined">ios_share</i></a>
                     </div>
                 </div>
 
@@ -204,7 +303,17 @@
                         <h4>Business App</h4>
                         <p>The app connects you to the talented people around the world.
                             Download it from play store</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://dotminds.github.io/Work/"><i class="material-symbols-outlined">ios_share</i></a>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="work_4.jpg" alt="">
+                    <div class="layer">
+                        <h4>Movie App</h4>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                        <a href="https://dotminds.github.io/Work/"><i class="material-symbols-outlined">ios_share</i></a>
                     </div>
                 </div>
 
@@ -214,19 +323,110 @@
                         <h4>Web App</h4>
                         <p>The app connects you to the talented people around the world.
                             Download it from play store</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="https://dotminds.github.io/D-M-MockPlus-Clone/"><i class="material-symbols-outlined">ios_share</i></a>
+                    </div>
+                </div>
+
+                <div class="sample">
+                    <img src="work_5.jpg" alt="">
+                    <div class="layer">
+                        <h4>Church App</h4>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store</p>
+                        <a href="https://dotminds.github.io/Mesukkah/"><i class="material-symbols-outlined">ios_share</i></a>
                     </div>
                 </div>
             </div>
             <a href="#" class="btn_1">see more</a>
         </div>
     </div>
+    <!-- --------------------------------------feedback area----------------------------- -->
+    <section id="feedback" class="container-feedback">
+        <div class="testimonial mySwiper">
+            <div class="arrow-box arrowBox">
+                <i id="right" class="material-symbols-outlined arrow">chevron_left</i>
+            </div>
+            <div class="slide-reviews slide">  
+                <div class="reviews swiper-slide">
+                    <div class="img-review">
+                        <img src="./reviews/guy.jpg" alt="" class="image-review">
+                    </div>
+                    <p class="review">
+                       Consider problems as a challenge and ennjoys finding creative yet appropriate solutions.
+                       Esmond is able to work out his own solutions, but also works well with group to solve
+                       problems. 
+                    </p>
+                    <div class="quote">
+                        <i class="material-symbols-outlined quote-icon">format_quote</i>
+                    </div>
+                    <div class="review-details">
+                        <span class="review-name">Josh bampton</span>
+                        <span class="review-job">Web Developer</span>
+                    </div>
+                </div>
+                <!-- <div class="reviews swiper-slide">
+                    <div class="img-review">
+                        <img src="./reviews/lady-2.jpg" alt="" class="image-review">
+                    </div>
+                    <p class="review">
+                        Esmond performs most jobs well and has the habit of checking work outcomes. he is 
+                        achieving excellence in some areas but in others is not yet achieving the highest 
+                        standards.
+                    </p>
+                    <div class="quote">
+                        <i class="material-symbols-outlined quote-icon">format_quote</i>
+                    </div>
+                    <div class="review-details">
+                        <span class="review-name">Jane Marie -</span>
+                        <span class="review-job">Web Developer</span>
+                    </div>
+                </div>
+                <div class="reviews swiper-slide">
+                    <div class="img-review">
+                        <img src="./reviews/lady.jpg" alt="" class="image-review">
+                    </div>
+                    <p class="review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+                        vel iure consequatur quia quas saepe molestiae possimus provident, libero
+                        excepturi debitis esse ipsum laudantium fugiat perferendis ullam nam iste iusto.
+                    </p>
+                    <div class="quote">
+                        <i class="material-symbols-outlined quote-icon">format_quote</i>
+                    </div>
+                    <div class="review-details">
+                        <span class="review-name">lace fish -</span>
+                        <span class="review-job">Web Developer</span>
+                    </div>
+                </div> -->
+                
+            </div>
+            <div class="arrow-box arrowBox right">
+                <i id="left" class="material-symbols-outlined arrow">chevron_right</i>
+            </div>
+            
+        </div>
+       
+    </section>
+
+
+
+
+
+
+
+
+
+
     <!-- --------------------------------------contact area----------------------------- -->
     <div id="contact">
         <!-- <div class="container"> -->
             <div class="row">
                 <div class="contact-left">
                     <h2 class="work">Contact Me</h2>
+                    <p class="review-contact">
+                       Are you working on ssomething great? I would love to help make it
+                       happen! Drop me a letter and start yor project right now!
+                     </p>
                     <p><i class="fa-solid fa-paper-plane"></i>esmondabban3@gmail.com</p>
                     <p><i class="fa-solid fa-phone-volume"></i>(+233) 59 736 2178</p>
                     <div class="social-icons">
@@ -234,6 +434,7 @@
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -246,10 +447,16 @@
                 </div>
             </div>
         <!-- </div> -->
-        <div class="copyright">
-            <p>Copyright © D•MoND InDs. Made by <img src="logo.png" alt="" class="copyright-logo" width="30" height="30"> D•MInDs</p>
-        </div>
+       
     </div>
+    <div class="top-arrow">
+        <a href="#header"><i class="material-symbols-outlined topArrow">expand_less</i></a>
+    </div>
+    <div class="copyright">
+        <p>Copyright © D•MoND InDs. Made by <img src="logo.png" alt="" class="copyright-logo" width="30" height="30"> D•MInDs</p>
+    </div>
+
+    <!-- <script src="/js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.js"></script> -->
     <script src="main.js"></script>
 </body>
 </html>
