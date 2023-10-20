@@ -80,13 +80,13 @@ body::-webkit-scrollbar-track{
     width: 50px;
 }   
 .nav-top-left h1{
-    color: #a78209;
+    color: #c8d41b;
     font-size: x-larger;
     font-family: 'verdana';
     transition: color 0.5s;
 }  
 .name{
-    color: #b6970b;
+    color: #c8d41b;
 }
 .nav-top-middle ul li{
    margin: 10px 20px;
@@ -94,11 +94,19 @@ body::-webkit-scrollbar-track{
    list-style: none;
    background-color: var(--primary-color);
    border-radius: 10px;
+   transition: background 0.5s;
 }  
+.nav-top-middle ul li:hover{
+    background: var(--secondary-color);  
+}
+.nav-top-middle ul li a:hover{
+    color: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, 
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 .nav-top-middle ul li a{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -112,13 +120,6 @@ body::-webkit-scrollbar-track{
     border-radius: 5px;
     transition: all 0.5s;
 } 
-
-.nav-top-middle ul li:hover a{
-    color: #dab928fa;
-    /* background: #0b063d; */
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, 
-    rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
 .icon-ion{
     margin-right: 8px;
 }
@@ -422,7 +423,7 @@ span{
     height: 100vh;
     z-index: 2;
     margin-top: -1000px;
-    transition: margin-top 0.5s ease;
+    transition: margin-top 0.5s ;
     transition: background 0.5s;
 }
 .learn-more-container::-webkit-scrollbar{
@@ -438,6 +439,7 @@ span{
     background: transparent;
 }
 .dropMoreContainer{
+    transition: margin-top 0.5s ;
     margin-top: 0px;
 }
 .dropBackBtn{
@@ -579,7 +581,7 @@ span{
 .services-list div:hover{
     background: #a7820979;
     transform: translateY(-10px);
-   
+   color: var(--secondary-color);
 }
 .services-list div i{
    font-size: 30px;
@@ -626,6 +628,30 @@ span{
     margin-top: 40px;
     margin-bottom: 20px;
 }
+.work-category{
+    margin: 20px 0;
+}
+
+.website-sec-1{
+    color: var(--secondary-color);
+    margin-right: 20px;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.website-sec-1::after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    border-radius: 25px;
+    left: 0;
+    width: 60px;
+    height: 5px;
+    background: var(--secondary-color);
+}
+
 #my-portfolio .work{
     color: var(--secondary-color);
     font-family: roboto;
@@ -650,7 +676,7 @@ span{
 #my-portfolio .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 30px;
     margin-top: 20px;
 }
 .sample{
@@ -733,6 +759,128 @@ span{
     background: var(--primary-color);
     color: var(--secondary-color);
 }
+
+/* -----------------------graphic-design---------------- */
+.work-category-flex{
+    width: 100%;
+    height: 100vh;
+    background: var(--secondary-color);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    margin-top: -900px;
+    transition: margin-top 0.5s;
+}
+.graphic-margin-top{
+    margin-top: 0px;
+}
+.graphic-work-container{
+    width: 85%;
+    margin: auto;
+}
+.graphic-work-container .graph-work{
+    color: var(--primary-color);
+    font-family: roboto;
+    font-weight: 600;
+    font-size: 35px;
+    position: relative;
+    transition: color 0.5s;
+}
+.graph-work::after{
+    content: '';
+    width: 65px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: background 0.5s;
+    /* margin-top: 40px;
+    margin-left: -130px; */
+}
+
+.website-sec{
+    color: var(--primary-color);
+    margin-right: 20px;
+    font-family: roboto;
+    font-weight: 700;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.website-sec::after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    border-radius: 25px;
+    left: 0;
+    width: 60px;
+    height: 5px;
+    background: var(--primary-color);
+}
+.work-list-design{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+.sample-design{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.sample-design img{
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.5s;
+}
+.sample-design:hover img{
+    transform: scale(1.1);
+}
+.graph-des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.graphicDesign{
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--primary-color);
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    cursor: pointer; 
+    font-family: roboto;
+    transition: all 0.5s;
+}
+.graphicDesign:hover{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+.graphbackHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.graphback{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: roboto;
+    font-weight: 600;
+}
+.graphback:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
 /* --------------------------feedback------------------ */
 .container-feedback{
     width: 70%;
@@ -778,6 +926,7 @@ p.review{
     font-family: 'verdana';
     line-height: 25px;
     margin-top: -35px;
+    transition: color 0.5s;
 }
 
 .reviews{
@@ -821,6 +970,11 @@ p.review{
 }
 .quote{
     margin-top: 10px;
+    transition: all 0.5s;
+}
+.quote i{
+    color: var(--secondary-color);
+    transition: color 0.5s;
 }
 .quote-icon{
     transform: rotate(180deg);
@@ -890,7 +1044,7 @@ p.review{
 .social-icons a{
    margin-right: 10px;
    display: inline-block;
-  
+   /* color: var(--primary-color); */
 }
 .social-icons a i{
     background: var(--secondary-color);
@@ -907,7 +1061,7 @@ p.review{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .social-icons a i:hover{
-    background: #cccccc71;
+    background: var(--secondary-color);
     transform: translateY(-3px);
   }
 .contact-right{
