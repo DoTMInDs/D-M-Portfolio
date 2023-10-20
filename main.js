@@ -12,6 +12,7 @@ function closemenu(){
 
 // -------------------------------learn-more-container-------------------//
 const learnMoreBtn = document.querySelector(".learnMore");
+// const backHome = document.querySelector(".backHome");
 const dropMore = document.querySelector(".learn-more-container");
 const backBtn = document.querySelector(".back-btn");
 
@@ -21,7 +22,23 @@ learnMoreBtn.addEventListener('click', () => {
     backBtn.addEventListener('click', () => {
         dropMore.classList.remove('dropMoreContainer')
     })
+   
 })
+
+// -------------------------------learn-more-container-------------------//
+const graph = document.querySelector('.graph-des');
+const graphicFlex = document.querySelector('.graphicFlex');
+const graphbackHome = document.querySelector('.graphbackHome');
+
+graph.addEventListener('click', () => {
+    graphicFlex.classList.toggle('graphic-margin-top')
+        
+    graphbackHome.addEventListener('click', () => {
+        graphicFlex.classList.remove('graphic-margin-top');
+    })
+})
+
+
 
 
 // -----------------------------------swipper----------------------------//
